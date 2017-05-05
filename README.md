@@ -6,6 +6,8 @@ A Clojure library for [HanLP](https://github.com/hankcs/HanLP)
 
 ` [hanlping "0.1.0-SNAPSHOT"] `
 
+* to-seg-list
+
 ```clojure
 
 user=> (ns test (:require [hanlping.core :as han]))
