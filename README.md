@@ -1,10 +1,11 @@
 # hanlping
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library for [HanLP](https://github.com/hankcs/HanLP)
 
-## Usage
+## Usage: Leiningen/Boot
 
-FIXME
+` [hanlping "0.1.0-SNAPSHOT"] `
+
 
 ## License
 
