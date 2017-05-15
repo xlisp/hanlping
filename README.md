@@ -1,12 +1,12 @@
 # hanlping
 
-A Clojure library for [HanLP](https://github.com/hankcs/HanLP)
+A Clojure library for [HanLP](https://github.com/hankcs/HanLP), 
 
 ## Usage: Leiningen/Boot
 
-` [hanlping "0.1.0-SNAPSHOT"] `
+` [hanlping "0.1.1-SNAPSHOT"] `
 
-* to-seg-list
+* to-seg-list, 返回分词的词性和分词 `[type word]`, n*为名词, [详情请看具体词性标注](http://www.hankcs.com/nlp/part-of-speech-tagging.html#h2-8)
 
 ```clojure
 
@@ -18,7 +18,7 @@ test=> han/crfs-segment-path
 
 test=> (time (han/to-seg-list "你看过穆赫兰道吗" "江西鄱阳湖干枯"))
 "Elapsed time: 2256.311219 msecs"
-(("你" "看过" "穆赫兰道" "吗") ("江西" "鄱阳湖" "干枯"))
+[[[r 你] [v 看过] [nz 穆赫兰道] [y 吗]] [[ns 江西] [ns 鄱阳湖] [a 干枯]]]
 
 ;;=> not first call: 
 "Elapsed time: 0.08001 msecs"
