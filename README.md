@@ -1,6 +1,6 @@
 # hanlping
 
-A Clojure library for [HanLP](https://github.com/hankcs/HanLP), 
+A Clojure library for [HanLP](https://github.com/hankcs/HanLP)
 
 ## Usage: Leiningen/Boot
 
